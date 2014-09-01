@@ -18,6 +18,8 @@ Make the text in WordPress sites resize in response to pages being viewed in dif
 
 Ideally, the most legible typography contains [between 45 and 75 characters per line](http://webtypography.net/2.1.2). This is difficult to accomplish for all screen widths with only CSS media-queries. FlowType.JS for WP eases this difficulty by changing the font-size based on a specific element\'s width. This allows for a perfect character count per line at any screen width.
 
+FlowType.JS is at https://github.com/simplefocus/FlowType.JS
+
 == Installation ==
 1. FTP Upload: Using your FTP program, upload the un-zipped plugin folder into /wp-content/plugins folder on your server.
 2. WordPress Upload: Navigate to Plugins > Add New > Upload and choose the zipped plugin folder
