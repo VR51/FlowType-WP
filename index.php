@@ -2,11 +2,11 @@
 /*
 Plugin Name: FlowType WP
 Plugin URI: http://journalxtra.com/
-Description: Alpha Version. Make font size responsive. Responsive web typography at its finest: font-size based on element width.
+Description: Alpha Version. Make font size responsive. Responsive web typography at its finest: font-size based on element width. Uses FlowType.JS (see readme file)
 Version: 1.1
 Author: Lee Hodson
 Author URI: http://journalxtra.com/
-Contributors: leehodson,simplefocus
+Contributors: leehodson
 Tags: responsive,font,text,responsive text
 Donate link: http://journalxtra.com
 Requires at least: 3.0
@@ -66,54 +66,106 @@ function vr_flowtype_settings() {
   $j = jQuery.noConflict();
   $j(document).ready(function($) {
       $('body').flowtype({
+      	 /* minimum   : 500,
+	  maximum   : 1200,
+	  minFont   : 12,
+	  maxFont   : 40,
+	  fontRatio : 30 */
       });
     });
 </script>
 
-<script> 
+<script>
+/* Written with Genesis and Dynamik in mind. Adjust, add or remove tags/selectors as needed */
         $j = jQuery.noConflict();
         $j(document).ready(function($j) {
-            $j(".entry-content").flowtype({
-                minFont: 12,
+        /* Apply settings to your site header */
+            $j(".site-header").flowtype({
+                minFont: 14,
+                maxFont: 18
+            });
+            $j(".site-header *").flowtype({
+                minFont: 14,
+                maxFont: 18
+            });
+        /* Apply settings to your site's main content */
+            $j(".content").flowtype({
+                minFont: 14,
+                maxFont: 18,
                 maxWidth: 800
             });
-            $j(".entry-content *").flowtype({
-                minFont: 12
+            $j(".content *").flowtype({
+                minFont: 14,
+                maxFont: 18
             });
-            $j("p *").flowtype({
-                minFont: 12
+        /* Apply settings to your site's sidebar */
+            $j(".sidebar").flowtype({
+                minFont: 14,
+                maxFont: 18,
+                fontRatio : 15
             });
-            $j("ul").flowtype({
-                minFont: 12
+            $j(".sidebar *").flowtype({
+                minFont: 14,
+                maxFont: 18,
+                fontRatio : 15
             });
-            $j("ul *").flowtype({
-                minFont: 12
-            });
+        /* Apply settings to specific elements */
              $j(".site-title").flowtype({
-                minFont: 30,
-                maxFont: 43,
+                minFont: 50,
+                maxFont: 60,
                 fontRatio : 15,
                 minWidth : 1,
-                maxWidth : 450
+                maxWidth : 510
             });
              $j(".site-title *").flowtype({
-                minFont: 30,
-                maxFont: 43,
+                minFont: 50,
+                maxFont: 60,
                 fontRatio : 15,
                 minWidth : 1,
-                maxWidth : 450
+                maxWidth : 510
             });
-            $j("h2").flowtype({
-                minFont: 24,
-                maxFont: 30
+            $j(".site-inner h2").flowtype({
+                minFont: 30,
+                maxFont: 34,
+                maxWidth: 800
             });
-            $j(".entry-title").flowtype({
-                minFont: 24,
-                maxFont: 30
+            $j(".site-inner .entry-title").flowtype({
+                minFont: 30,
+                maxFont: 34,
+                maxWidth: 800
             });
-            $j(".entry-title *").flowtype({
-                minFont: 24,
-                maxFont: 30
+            $j(".site-inner .entry-title *").flowtype({
+                minFont: 30,
+                maxFont: 34,
+                maxWidth: 800
+            });
+            $j("#ez-fat-footer-container").flowtype({
+                minFont: 14,
+                maxFont: 22,
+                maxWidth: 400
+            });
+            $j("#ez-fat-footer-container *").flowtype({
+                minFont: 14,
+                maxFont: 22,
+                maxWidth: 400
+            });
+            $j("#ez-fat-footer-container .widgettitle").flowtype({
+                minFont: 20,
+                maxFont: 24,
+                maxWidth: 400
+            });
+            $j("#ez-fat-footer-container .widgettitle *").flowtype({
+                minFont: 20,
+                maxFont: 24,
+                maxWidth: 400
+            });
+            $j(".site-footer").flowtype({
+                minFont: 12,
+                maxFont: 16
+            });
+            $j(".site-footer *").flowtype({
+                minFont: 12,
+                maxFont: 16
             });
         });
    
