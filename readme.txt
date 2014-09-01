@@ -1,6 +1,3 @@
-FlowType-WP
-===========
-
 === FlowType WP ===
 Contributors: leehodson,simplefocus
 Tags: responsive,font,text,responsive text
