@@ -88,6 +88,19 @@ function vr_flowtype_settings() {
                 minFont: 14,
                 maxFont: 18
             });
+        /* Apply settings to your site primary menu */
+            $j(".nav-primary li").flowtype({
+                minFont: 16,
+                maxFont: 20
+            });
+            $j(".nav-primary li a").flowtype({
+                minFont: 16,
+                maxFont: 20
+            });
+            $j(".nav-primary li li a").flowtype({
+                minFont: 16,
+                maxFont: 20
+            });
         /* Apply settings to your site's main content */
             $j(".content").flowtype({
                 minFont: 14,
