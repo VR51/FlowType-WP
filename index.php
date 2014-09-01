@@ -38,6 +38,13 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 ?>
 <?php
 
+//avoid direct calls to this file where wp core files not present
+if (!function_exists('add_action')) {
+    header('Status: 403 Forbidden');
+    header('HTTP/1.1 403 Forbidden');
+    exit();
+}
+
 // Register Script
 function vr_flowtype_wp() {
 
