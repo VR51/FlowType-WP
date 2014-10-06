@@ -4,11 +4,11 @@ Tags: responsive,font,text,responsive text
 Donate link: http://journalxtra.com
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2
 License URI: http://wordpress.org/about/gpl/
 
-Make font size responsive. Responsive web typography at its finest: font-size based on element width.
+Make font size responsive. Responsive web typography at its finest using the FlowType.js script. This is the WP alpha version.
 
 == Description ==
 Make the text in WordPress sites resize in response to pages being viewed in different web browser widths (viewport widths).
@@ -99,7 +99,7 @@ line-height: 1.45;
 
 Prepare for FlowType.JS by making sure that the typography is flexible. Start with this CSS and make changes as necessary:
 
-`css
+```css
 body {
    font-size: 18px;
 }
@@ -111,7 +111,7 @@ h1,h2,h3,h4,h5,h6,p {
 h1 { font-size: 4em; }
 h2 { font-size: 3em; }
 h3 { etc...
-`
+```
 
 _Note:_ Setting a specific font-size in your CSS file will make sure that your website remains accessible in case your viewer has JavaScript disabled. These numbers will be overridden as FlowType.JS updates the `font-size` number inline.
 
@@ -136,6 +136,12 @@ You will most likely want to change the default settings. To do so, simply inclu
 ```
 
 == Changelog ==
+1.1.1
+
+* Added jQuery enqueuing - thank you GitHub user Vitaligent for pointing out this oversight.
+* Prevented script loading in admin
+* Added .n suffix to version number to reflect WP plugin version update, not FlowType.JS version update.
+
 1.1
 
 Initial Release.
