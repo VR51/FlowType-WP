@@ -139,6 +139,7 @@ You will most likely want to change the default settings. To do so, simply inclu
 ```
 
 == Changelog ==
+
 1.1.1
 
 * Added jQuery enqueuing - thank you GitHub user Vitaligent for pointing out this oversight.
@@ -147,6 +148,5 @@ You will most likely want to change the default settings. To do so, simply inclu
 
 1.1
 
-Initial Release.
-
-Version number chosen because it matches the version of FlowType.JS loaded by the plugin.
+* Initial Release.
+* Version number chosen because it matches the version of FlowType.JS loaded by the plugin.

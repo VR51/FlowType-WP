@@ -45,11 +45,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 *	Define Functions
 */
 
-// Register Script
+// Register Scripts
 function vr_flowtype_wp() {
 
-	$plugin_name='FlowType';
-	$plugind = plugins_url( '/', __FILE__ );
 	wp_enqueue_script( 'jquery' );
 	wp_register_script( 'vr_flowtype_wp', plugins_url( '/', __FILE__ ) . 'include/flowtype.js', false, '1.1.1', true );
 	wp_enqueue_script( 'vr_flowtype_wp' );
